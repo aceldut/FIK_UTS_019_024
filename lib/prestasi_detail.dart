@@ -63,31 +63,29 @@ class _PrestasiDetailState extends State<PrestasiDetail> {
                                   fit: BoxFit.cover)),
                         ),
                         Expanded(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Container(
-                                  margin: const EdgeInsets.only(top: 23.0),
-                                  child: Text(
-                                    prestasi.nama,
-                                    style: const TextStyle(
-                                      fontSize: 16.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 4,
-                                ),
-                                Text(
-                                  prestasi.lomba,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(top: 23.0),
+                                child: Text(
+                                  prestasi.nama,
                                   style: const TextStyle(
-                                    fontSize: 14.0,
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                prestasi.lomba,
+                                style: const TextStyle(
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
